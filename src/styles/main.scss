@@ -1,0 +1,185 @@
+$color-accent: rgb(245, 218, 14);
+$header-height: 5rem;
+
+html {
+  font: 16px/24px "Titillium Web", sans-serif;
+  box-sizing: border-box;
+}
+* {
+  box-sizing: inherit;
+}
+html,
+body {
+  height: 100%;
+  margin: 0;
+}
+a {
+  color: darken($color-accent, 16);
+  text-decoration: none;
+}
+
+// Logo
+.logo {
+  padding: 1rem 2rem;
+  height: 100%;
+
+  img {
+    display: block;
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    object-position: center;
+  }
+}
+
+// Layout
+.layout {
+  background-color: cyan;
+  min-height: 100%;
+  width: 100%;
+  display: grid;
+  grid-template-areas:
+    "logo header"
+    "aside content"
+    "footer footer";
+  grid-template-rows: $header-height 1fr auto;
+  grid-template-columns: 18rem 1fr;
+}
+.layout__logo {
+  grid-area: logo;
+  background: $color-accent;
+}
+.layout__header {
+  grid-area: header;
+  background: darken($color-accent, 4);
+}
+.layout__aside {
+  grid-area: aside;
+  background: #ddd;
+}
+.layout__content {
+  grid-area: content;
+  background: whitesmoke;
+}
+.layout__footer {
+  grid-area: footer;
+}
+
+// Grid
+.grid {
+  // width: 100%;
+  // max-width: 60rem;
+  margin: 0 auto;
+  padding: 0 2rem;
+}
+
+// Filter
+.filter {
+  background-color: #ddd;
+  padding: 2rem;
+  margin: 2rem 0;
+}
+
+// Deck
+.deck {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+  margin: 4rem 0;
+  gap: 1rem;
+}
+
+.card {
+  height: 100%;
+  display: flex;
+  flex-flow: column nowrap;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}
+.card__header {
+  padding: 0.5rem;
+}
+.card__title {
+  font-weight: bolder;
+  color: #666;
+}
+.card__content {
+  flex: 1 0;
+  // background-color: salmon;
+}
+.card__footer {
+  justify-self: flex-end;
+  padding: 1rem;
+  // background-color: orange;
+}
+.card__image img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+.card__text {
+  padding: 0 1rem;
+}
+
+.footer {
+  font-size: 13px;
+  padding: 4rem;
+  background: #333;
+  color: white;
+  height: 400px;
+  text-align: end;
+}
+
+// Shablau
+.aside {
+  position: relative;
+  height: 100%;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  flex-flow: column nowrap;
+}
+.menu {
+  position: sticky;
+  top: 0;
+}
+.menu__item a {
+  padding: 1rem;
+  text-decoration: none;
+  color: #000;
+  display: block;
+}
+.menu__item a:hover {
+  background-color: #f5f5f5;
+}
+.profile {
+  position: sticky;
+  bottom: 0;
+}
+.profile__content {
+  color: black;
+  background: white;
+  padding: 1rem;
+}
+.profile__content::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 1rem;
+  border-top: 1px solid #dcdcdc;
+}
+.profile__edit a {
+  color: black;
+  background: white;
+  text-decoration: none;
+  text-align: center;
+  display: block;
+  padding: 1rem;
+}
+.profile__edit a:hover {
+  color: white;
+  background-color: coral;
+}
+// .coisa-muito-grande {
+//   height: 100vh;
+//   background: magenta;
+// }
