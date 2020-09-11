@@ -7,7 +7,7 @@ $color-accent: rgb(233, 18, 86);
 
 // general
 html {
-  font: 14px/16px $sans-serif-font-family;
+  font: 14px/21px $sans-serif-font-family;
   box-sizing: border-box;
 }
 * {
@@ -68,14 +68,6 @@ a {
 }
 .layout__footer {
   grid-area: footer;
-}
-
-// Grid
-.grid {
-  // width: 100%;
-  // max-width: 60rem;
-  margin: 0 auto;
-  padding: 0 2rem;
 }
 
 // Filter
@@ -188,3 +180,5 @@ a {
 //   height: 100vh;
 //   background: magenta;
 // }
+
+@import "grid";
