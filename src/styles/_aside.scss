@@ -1,0 +1,19 @@
+$aside-bg: darken($color-bg, 4);
+
+.aside {
+  background: $aside-bg;
+  display: flex;
+  flex-flow: column nowrap;
+}
+.aside__header {
+  height: $header-height;
+  flex: 0 0 auto;
+}
+.aside__body {
+  flex: 1 1 auto;
+  overflow: auto;
+}
+.aside__footer {
+  flex: 0 0 auto;
+  background: gold;
+}

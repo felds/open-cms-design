@@ -3,12 +3,18 @@ $sans-serif-font-family: "Open Sans", sans-serif;
 $header-height: 5rem;
 
 // definitions
-$color-accent: rgb(233, 18, 86);
+$color-accent: darkturquoise;
+$color-bg: #f4f4f4;
+$color-text: #444444;
+$header-height: 5rem;
+$gap: 1rem;
 
 // general
 html {
   font: 14px/21px $sans-serif-font-family;
   box-sizing: border-box;
+  background-color: $color-bg;
+  color: $color-text;
 }
 * {
   box-sizing: inherit;
@@ -21,21 +27,6 @@ body {
 a {
   color: darken($color-accent, 16);
   text-decoration: none;
-}
-
-// Logo
-.logo {
-  padding: 1rem 2rem;
-  height: 100%;
-  display: none;
-
-  img {
-    display: block;
-    height: 100%;
-    width: 100%;
-    object-fit: contain;
-    object-position: center;
-  }
 }
 
 // Layout
@@ -173,3 +164,5 @@ a {
 @import "layout";
 @import "section";
 @import "menu";
+@import "aside";
+@import "logo";
