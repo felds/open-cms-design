@@ -1,8 +1,13 @@
-$color-accent: rgb(245, 218, 14);
+// synonyms
+$sans-serif-font-family: "Open Sans", sans-serif;
 $header-height: 5rem;
 
+// definitions
+$color-accent: rgb(233, 18, 86);
+
+// general
 html {
-  font: 16px/24px "Titillium Web", sans-serif;
+  font: 14px/16px $sans-serif-font-family;
   box-sizing: border-box;
 }
 * {
