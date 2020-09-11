@@ -9,13 +9,21 @@ html(lang="pt-br")
 
   body
     .layout
-      .layout__logo
-        include _logo.pug
-      .layout__header
       .layout__aside
-        include _aside.pug
-      .layout__content
-        include _section.pug
-      //- .layout__footer Footer
+        .layout__aside-toggle
+        p aside
+      .layout__main
+        .layout__content content
+        .layout__footer Footer
 
+      //- .layout__logo
+      //-   include _logo.pug
+      //- .layout__header
+      //- .layout__aside
+      //-   include _aside.pug
+      //- .layout__content
+      //-   include _section.pug
+      //- //- .layout__footer Footer
+    
+    script(src="menu.ts")
 
