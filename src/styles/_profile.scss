@@ -1,0 +1,9 @@
+.profile {
+  padding: $gap;
+  &::before {
+    display: block;
+    content: "";
+    border-top: 2px solid peru;
+    margin-bottom: $gap;
+  }
+}

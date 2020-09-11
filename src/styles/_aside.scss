@@ -4,6 +4,7 @@ $aside-bg: darken($color-bg, 4);
   background: $aside-bg;
   display: flex;
   flex-flow: column nowrap;
+  height: 100vh;
 }
 .aside__header {
   height: $header-height;
@@ -15,5 +16,4 @@ $aside-bg: darken($color-bg, 4);
 }
 .aside__footer {
   flex: 0 0 auto;
-  background: gold;
 }
