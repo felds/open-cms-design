@@ -1,11 +1,13 @@
 {
   "name": "@felds/open-cms-design",
+  "private": false,
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "start": "parcel docs/index.pug"
+    "start": "parcel docs/index.pug",
+    "build": "parcel build docs/index.pug"
   },
   "keywords": [],
   "author": "",
